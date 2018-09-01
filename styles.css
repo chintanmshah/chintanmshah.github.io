@@ -1,0 +1,50 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    /* font-family: 'Julius Sans One', sans-serif; */
+    font-family: 'Arvo', serif;
+}
+
+.container::after {
+    content: '';
+    background-image: url('https://source.unsplash.com/1600x900/?construction');
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.content-center {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 30%;
+    left: 0;
+    height: 60px;
+    text-align: center;
+}
+
+.text-holder {
+    display: inline-block;
+    height: 240px;
+    width: 800px;
+    background-color: lightgray;
+    background-repeat: no-repeat;
+    opacity: 0.75;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h3 {
+    color: rgb(25, 19, 31);
+}
+
+a {
+    text-decoration: none;
+}
