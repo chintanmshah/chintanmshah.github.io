@@ -33,6 +33,7 @@ html, body {
     display: inline-block;
     height: 240px;
     width: 800px;
+    padding-bottom: 20px;
     background-color: lightgray;
     opacity: 0.75;
 }
