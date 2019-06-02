@@ -1,6 +1,6 @@
 var app = new Vue({
     el: '#timer',
-    beforeCreate: componentDidMount,
+    beforeMount: componentDidMount,
     beforeDestroy: componentWillUnmount,
     data: {
         months: undefined,
@@ -17,15 +17,14 @@ var app = new Vue({
     }
 });
 
-const timeTillDate = "10 06 2019, 6:00 am";
+const timeTillDate = "2019-10-06 09:00:00";
 
 function componentDidMount() {
     this.interval = setInterval(() => {
 
-
-        const then = new Date(timeTillDate);
-        const now = new Date();
-        const countdown = moment.duration(then - now);
+        const then = moment(timeTillDate);
+        const now = moment();
+        const countdown = moment.duration(then.diff(now));
 
         app.months = countdown.months();
         app.days = countdown.days();
