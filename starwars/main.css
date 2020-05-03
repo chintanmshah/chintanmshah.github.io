@@ -36,7 +36,7 @@ body {
 	position: relative;
 	top: 9999px;
 	transform-origin: 50% 100%;
-	animation: crawl 60s linear;
+	animation: crawl 750s linear;
 }
 
 .crawl > .title {
@@ -55,8 +55,8 @@ body {
 		transform: rotateX(20deg) translateZ(0);
 	}
 	100% {
-		top: -6000px;
-		transform: rotateX(25deg) translateZ(-2500px);
+		top: -60000px;
+		transform: rotateX(25deg) translateZ(-25000px);
 	}
 }
 
