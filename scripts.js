@@ -10,6 +10,9 @@ var arr = [
 	"Instagram|https://www.instagram.com/chin._.tan/",
 	"Facebook|https://www.facebook.com/i.am.chintan.shah",
 	"",
+	"Oh btw, Here's something I made for Star Wars Day.",
+	"Star Wars|./starwars/starwars.html",
+	"",
 	"That's All Folks!",
 ];
 
@@ -27,7 +30,7 @@ async function addLineToScreen() {
 		txt.innerHTML = `C:\\Home> `;
 		container.insertBefore(txt, cursor);
 
-		let isLink = line.indexOf("https") >= 0 ? true : false;
+		let isLink = line.indexOf("|") >= 0 ? true : false;
 
 		if (isLink) {
 			let href = line.split("|")[1];
