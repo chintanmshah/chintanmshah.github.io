@@ -5,6 +5,7 @@
 		<meta charset="utf-8" />
 
 		<title>Dhwani weds Chintan</title>
+		<meta content="width=device-width, initial-scale=1" name="viewport" />
 		<meta name="description" content="Save the date - Feb 16, 2021" />
 		<meta name="author" content="The groom" />
 
@@ -22,26 +23,49 @@
 			img {
 				position: absolute;
 				top: 10%;
-				left: 30%;
-				width: 80%;
-				max-width: 400px;
+				max-height: 85%;
+				width: auto;
+				height: auto;
+
+				left: 15%;
+				max-width: 70%;
 			}
 
-            .text {
-                position: absolute;
-                top: 15%;
-                right: 30%;
-            }
+			@media only screen and (max-width: 575.98px) {
+				img {
+					left: 5%;
+					max-width: 90%;
+				}
+			}
+
+			@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+				img {
+					left: 10%;
+					max-width: 80%;
+				}
+			}
+
+			@media only screen and (min-width: 1200px) {
+				img {
+					top: 5%;
+					max-height: 90%;
+				}
+			}
+
+			.text {
+				position: absolute;
+				top: 15%;
+				right: 30%;
+			}
 		</style>
 	</head>
 
 	<body>
-        <img src="./cover.JPEG" alt="Dhwani & Chintan" />
-        <div class="text">
-            <p>Save The Date</p>
-            <p>Dhwani & Chintan</p>
-            <p>Feb 16, 2021</p>
-        </div>
-        
+		<img src="./cover.png" alt="Dhwani & Chintan" />
+		<div class="text">
+			<p>Save The Date</p>
+			<p>Dhwani & Chintan</p>
+			<p>Feb 16, 2021</p>
+		</div>
 	</body>
 </html>
