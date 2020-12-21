@@ -29,6 +29,8 @@
 				height: auto;
 				border: 25px solid white;
 				box-sizing: border-box;
+				animation: fade-left 2s;
+				animation-fill-mode: both;
 
 				left: 15%;
 				max-width: 70%;
@@ -46,6 +48,41 @@
 
 			p {
 				margin: 0;
+			}
+
+			#l1, #l2, #l3 {
+				animation: fade-right 1s;
+				animation-fill-mode: both;
+			}
+
+			#l2 {
+				animation-delay: 0.5s;
+			}
+
+			#l3 {
+				animation-delay: 1s;
+			}
+
+			@keyframes fade-right {
+				from {
+					opacity: 0;
+					transform: translateX(20px);
+				}
+				to {
+					opacity: 1;
+					transform: translateX(0);
+				}
+			}
+
+			@keyframes fade-left {
+				from {
+					opacity: 0;
+					transform: translateX(-30px);
+				}
+				to {
+					opacity: 1;
+					transform: translateX(0);
+				}
 			}
 
 			@media only screen and (max-width: 575.98px) {
@@ -84,9 +121,9 @@
 	<body>
 		<img src="./cover.png" alt="Dhwani & Chintan" />
 		<div class="text">
-			<p>Save The Date</p>
-			<p>Dhwani & Chintan</p>
-			<p>Feb 16, 2021</p>
+			<p id="l1">Save The Date</p>
+			<p id="l2">Dhwani & Chintan</p>
+			<p id="l3">Feb 16, 2021</p>
 		</div>
 	</body>
 </html>
