@@ -8,122 +8,18 @@
 		<meta content="width=device-width, initial-scale=1" name="viewport" />
 		<meta name="description" content="Save the date - Feb 16, 2021" />
 		<meta name="author" content="The groom" />
-
-		<style>
-			html,
-			body {
-				width: 100;
-				margin: 0;
-			}
-
-			html {
-				background-image: url("noise.png");
-				background-repeat: repeat;
-			}
-
-			img {
-				position: absolute;
-				top: 10%;
-				max-height: 85%;
-				width: auto;
-				height: auto;
-				border: 25px solid white;
-				box-sizing: border-box;
-				animation: fade-left 2s;
-				animation-fill-mode: both;
-
-				left: 15%;
-				max-width: 70%;
-			}
-
-			.text {
-				position: absolute;
-				color: white;
-				text-shadow: 2px 2px 2px gray;
-				top: 15%;
-
-				font-size: 2rem;
-				right: 24%;
-			}
-
-			p {
-				margin: 0;
-			}
-
-			#l1, #l2, #l3 {
-				animation: fade-right 1s;
-				animation-fill-mode: both;
-			}
-
-			#l2 {
-				animation-delay: 0.5s;
-			}
-
-			#l3 {
-				animation-delay: 1s;
-			}
-
-			@keyframes fade-right {
-				from {
-					opacity: 0;
-					transform: translateX(20px);
-				}
-				to {
-					opacity: 1;
-					transform: translateX(0);
-				}
-			}
-
-			@keyframes fade-left {
-				from {
-					opacity: 0;
-					transform: translateX(-30px);
-				}
-				to {
-					opacity: 1;
-					transform: translateX(0);
-				}
-			}
-
-			@media only screen and (max-width: 575.98px) {
-				img {
-					left: 5%;
-					max-width: 90%;
-				}
-
-				.text {
-					font-size: 1rem;
-					right: 12%;
-				}
-			}
-
-			@media only screen and (min-width: 576px) and (max-width: 767.98px) {
-				img {
-					left: 10%;
-					max-width: 80%;
-				}
-
-				.text {
-					font-size: 1.4rem;
-					right: 15%;
-				}
-			}
-
-			@media only screen and (min-width: 1200px) {
-				img {
-					top: 5%;
-					max-height: 90%;
-				}
-			}
-		</style>
+		<link rel="preload" href="./cover.png" />
+		<link rel="stylesheet" href="./styles.css" />
 	</head>
 
 	<body>
-		<img src="./cover.png" alt="Dhwani & Chintan" />
-		<div class="text">
-			<p id="l1">Save The Date</p>
-			<p id="l2">Dhwani & Chintan</p>
-			<p id="l3">Feb 16, 2021</p>
+		<div class="container">
+			<img src="./cover.png" alt="Dhwani & Chintan" />
+			<div class="text">
+				<p id="l1">Save The Date</p>
+				<p id="l2">Dhwani & Chintan</p>
+				<p id="l3">Feb 16, 2021</p>
+			</div>
 		</div>
 	</body>
 </html>
