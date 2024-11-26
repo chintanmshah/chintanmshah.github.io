@@ -1,1 +1,112 @@
+<!DOCTYPE html>
 
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>#theShaDeShadi</title>
+		<meta name="description" content="Dhwani and Chintan's wedding album" />
+		<meta name="author" content="Chintan" />
+
+		<!-- Favicons -->
+		<link rel="icon" type="image/png" href="./assets/favicons/favicon-96x96.png" sizes="96x96" />
+		<link rel="icon" type="image/svg+xml" href="./assets/favicons/favicon.svg" />
+		<link rel="shortcut icon" href="./assets/favicons/favicon.ico" />
+		<link rel="apple-touch-icon" sizes="180x180" href="./assets/favicons/apple-touch-icon.png" />
+
+		<link rel="manifest" href="manifest.json" />
+
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css" />
+	</head>
+
+	<body>
+		<section class="section">
+			<div class="container mb-6">
+				<h1 class="title">Chintan & Dhwani's wedding album!</h1>
+			</div>
+			<div class="container">
+				<div class="fixed-grid has-2-cols-mobile has-3-cols-desktop">
+					<div class="grid is-gap-3">
+						<div class="cell">
+							<div class="card">
+								<div class="card-image">
+									<figure class="image is-4by3 is-clickable">
+										<a target="_blank" href="https://photos.app.goo.gl/iwJbW1y8W2AAsvMH7">
+											<img src="./assets/images/c-grah-shanti.png" alt="Chintan's Grah shanti" />
+										</a>
+									</figure>
+								</div>
+							</div>
+						</div>
+						<div class="cell">
+							<div class="card">
+								<div class="card-image">
+									<figure class="image is-4by3">
+										<a target="_blank" href="https://photos.app.goo.gl/ww8JANinj8khGZfr7">
+											<img src="./assets/images/d-grah-shanti.png" alt="Dhwani's Grah shanti" />
+										</a>
+									</figure>
+								</div>
+							</div>
+						</div>
+						<div class="cell">
+							<div class="card">
+								<div class="card-image">
+									<figure class="image is-4by3">
+										<a target="_blank" href="https://photos.app.goo.gl/WuP2dEgXtkoTxo3y9">
+											<img src="./assets/images/mehendi.png" alt="Dhwani's Mehendi" />
+										</a>
+									</figure>
+								</div>
+							</div>
+						</div>
+						<div class="cell">
+							<div class="card">
+								<div class="card-image">
+									<figure class="image is-4by3">
+										<a target="_blank" href="https://photos.app.goo.gl/AxYEkYnW5Chg6FzY9">
+											<img src="./assets/images/sangeet.png" alt="Sangeet" />
+										</a>
+									</figure>
+								</div>
+							</div>
+						</div>
+						<div class="cell">
+							<div class="card">
+								<div class="card-image">
+									<figure class="image is-4by3">
+										<a target="_blank" href="https://photos.app.goo.gl/mBKPuYQ7SPzaphvbA">
+											<img src="./assets/images/wedding.png" alt="Wedding" />
+										</a>
+									</figure>
+								</div>
+							</div>
+						</div>
+						<div class="cell">
+							<div class="card">
+								<div class="card-image">
+									<figure class="image is-4by3">
+										<a target="_blank" href="https://photos.app.goo.gl/V7rziPWczVQG9oC9A">
+											<img src="./assets/images/reception.png" alt="Reception" />
+										</a>
+									</figure>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+	<script>
+		if ("serviceWorker" in navigator) {
+			window.addEventListener("load", function () {
+				navigator.serviceWorker
+					.register("/sw.js")
+					.then((res) => console.log("service worker registered"))
+					.catch((err) => console.log("service worker not registered", err));
+			});
+		}
+	</script>
+</html>
