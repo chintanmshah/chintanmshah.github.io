@@ -1,13 +1,13 @@
 const staticCdAlbum = "cd-album-site-v1";
 const assets = [
-	"/",
-	"/index.html",
-	"/assets/images/c-grah-shanti.png",
-	"/assets/images/d-grah-shanti.png",
-	"/assets/images/mehendi.png",
-	"/assets/images/sangeet.png",
-	"/assets/images/wedding.png",
-	"/assets/images/reception.png",
+	"./",
+	"./index.html",
+	"./assets/images/c-grah-shanti.png",
+	"./assets/images/d-grah-shanti.png",
+	"./assets/images/mehendi.png",
+	"./assets/images/sangeet.png",
+	"./assets/images/wedding.png",
+	"./assets/images/reception.png",
 ];
 
 self.addEventListener("install", (installEvent) => {

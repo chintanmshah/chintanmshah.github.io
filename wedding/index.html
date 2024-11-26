@@ -15,7 +15,7 @@
 		<link rel="shortcut icon" href="./assets/favicons/favicon.ico" />
 		<link rel="apple-touch-icon" sizes="180x180" href="./assets/favicons/apple-touch-icon.png" />
 
-		<link rel="manifest" href="manifest.json" />
+		<link rel="manifest" href="./manifest.json" />
 
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css" />
 	</head>
@@ -103,7 +103,7 @@
 		if ("serviceWorker" in navigator) {
 			window.addEventListener("load", function () {
 				navigator.serviceWorker
-					.register("/sw.js")
+					.register("./sw.js")
 					.then((res) => console.log("service worker registered"))
 					.catch((err) => console.log("service worker not registered", err));
 			});

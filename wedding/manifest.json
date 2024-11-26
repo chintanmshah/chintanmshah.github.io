@@ -1,21 +1,21 @@
 {
     "name": "CD's wedding album",
     "short_name": "#theShaDeShadi",
-    "start_url": "/index.html",
-    "id": "/index.html",
+    "start_url": "./index.html",
+    "id": "./index.html",
     "icons": [
       {
-        "src": "/assets/favicons/web-app-manifest-144x144.png",
+        "src": "./assets/favicons/web-app-manifest-144x144.png",
         "sizes": "144x144",
         "type": "image/svg"
       },
       {
-        "src": "/assets/favicons/web-app-manifest-192x192.png",
+        "src": "./assets/favicons/web-app-manifest-192x192.png",
         "sizes": "192x192",
         "type": "image/png"
       },
       {
-        "src": "/assets/favicons/web-app-manifest-512x512.png",
+        "src": "./assets/favicons/web-app-manifest-512x512.png",
         "sizes": "512x512",
         "type": "image/png"
       }
